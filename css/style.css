@@ -1,0 +1,161 @@
+a:hover, a:visited, a:link, a:active {
+  text-decoration: none !important; }
+
+.infoblock {
+  background: #333333;
+  min-width: 320px;
+  max-width: 782px;
+  padding: 5px; }
+  .infoblock .header {
+    height: 75px;
+    border-bottom: 1px solid #797977;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden; }
+    .infoblock .header div {
+      color: #ffffff;
+      font-family: "Myriad Pro Regular", sans-serif;
+      display: flex;
+      align-items: center; }
+      .infoblock .header div:first-of-type {
+        font-size: 22pt;
+        margin-right: 15px; }
+        .infoblock .header div:first-of-type:before {
+          background: url("../images/imdb-logo.png");
+          background-size: auto 100%;
+          display: inline-block;
+          height: 60px;
+          width: 95px;
+          content: "";
+          margin-right: 10px;
+          background-repeat: no-repeat; }
+      .infoblock .header div:nth-of-type(2) {
+        font-size: 22pt;
+        text-transform: uppercase; }
+        .infoblock .header div:nth-of-type(2):before {
+          background: url("../images/movies-icon.png");
+          background-size: auto 100%;
+          display: inline-block;
+          height: 45px;
+          width: 44px;
+          content: "";
+          background-repeat: no-repeat;
+          margin-right: 10px; }
+      @media screen and (max-width: 450px) {
+        .infoblock .header div:first-of-type {
+          font-size: 14pt; }
+          .infoblock .header div:first-of-type:before {
+            height: 30%;
+            width: 35px; }
+        .infoblock .header div:nth-of-type(2) {
+          font-size: 14pt; }
+          .infoblock .header div:nth-of-type(2):before {
+            height: 30%;
+            width: 25px; } }
+    .infoblock .header #movies-icon {
+      height: 45px; }
+  .infoblock .movies .movie {
+    margin: 17px 0px;
+    padding-left: 16px;
+    padding-right: 16px; }
+    .infoblock .movies .movie .title {
+      color: #ffffff;
+      font-size: 16pt;
+      font-weight: bold;
+      height: 50px;
+      line-height: 15pt;
+      overflow: hidden; }
+    @media screen and (min-width: 360px) and (max-width: 425px) {
+      .infoblock .movies .movie .title {
+        font-size: 11pt; } }
+    .infoblock .movies .movie .genre {
+      text-transform: uppercase;
+      color: #aec7d5;
+      font-size: 8pt;
+      height: 20px;
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+    @media screen and (min-width: 360px) and (max-width: 425px) {
+      .infoblock .movies .movie .genre {
+        font-size: 6pt; } }
+    .infoblock .movies .movie .rating {
+      font-size: 17pt;
+      font-family: "Myriad Pro Regular", sans-serif;
+      color: #ffffff;
+      width: 70px; }
+      .infoblock .movies .movie .rating:before {
+        background: url("../images/star.png");
+        margin-right: 5px;
+        background-size: 28px 28px;
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        content: "";
+        margin-bottom: 14px; }
+    @media screen and (min-width: 360px) and (max-width: 425px) {
+      .infoblock .movies .movie .rating {
+        font-size: 12pt;
+        width: 50px; }
+        .infoblock .movies .movie .rating:before {
+          background-size: 18px 18px;
+          height: 18px;
+          width: 18px;
+          margin-bottom: 9px; } }
+    .infoblock .movies .movie .description {
+      align-items: flex-start;
+      color: #aec7d5;
+      font-size: 8.5pt;
+      text-align: justify;
+      padding-left: 14px;
+      border-left: 1px dotted #797977;
+      height: 56px;
+      overflow: hidden;
+      width: calc(100% - 70px);
+      text-overflow: ellipsis;
+      line-height: 14px;
+      /* fallback */ }
+    @media screen and (min-width: 360px) and (max-width: 425px) {
+      .infoblock .movies .movie .description {
+        font-size: 6pt;
+        width: calc(100% - 50px); } }
+    .infoblock .movies .movie div {
+      display: flex;
+      align-items: center; }
+    .infoblock .movies .movie > div:first-child {
+      margin-bottom: 10px;
+      align-items: flex-start; }
+    .infoblock .movies .movie .image {
+      width: 35%;
+      border: 1px solid #bbbbbb;
+      height: 92px;
+      overflow: hidden; }
+      .infoblock .movies .movie .image img {
+        width: 100%;
+        height: auto; }
+    .infoblock .movies .movie .more {
+      background-color: #868684;
+      border: none;
+      font-size: 10px;
+      height: 21px;
+      width: 70px;
+      text-align: left;
+      padding-left: 8px;
+      color: #c3c3c2;
+      border-radius: 2px;
+      bottom: 0;
+      padding-top: 3px; }
+      .infoblock .movies .movie .more:before {
+        content: url("../images/arrow.png");
+        margin-right: 5px; }
+    .infoblock .movies .movie .info {
+      display: block;
+      margin-left: 13px;
+      height: 95px;
+      width: 65%; }
+      .infoblock .movies .movie .info div {
+        align-items: flex-start; }
+
+/*# sourceMappingURL=style.css.map */
